@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&family=Staatliches&display=swap');
+
+
+ 
+
+.footer {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+.bw-mode .footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h4 {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-section a:hover {
+  color: #0077ff;
+}
+
+.footer-social a {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: inherit;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-social a:hover {
+  color: #0077ff;
+}
+
+.footer-bottom {
+   font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.bw-mode .footer-bottom {
+  border-color: #444;
+}

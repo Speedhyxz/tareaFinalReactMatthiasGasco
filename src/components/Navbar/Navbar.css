@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+ span,li, .dropdown-btn{font-family: "Bebas Neue", sans-serif;}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  position: relative;
+  color: black;
+  transition: color 0.4s ease;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo-icon {
+  font-size: 1.5rem;
+  color: inherit;
+  transition: color 0.4s ease;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a,
+.dropdown-btn,
+.mode-btn {
+  text-decoration: none;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  color: inherit;
+  transition: color 0.4s ease;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 4px;
+  margin-top: 0.25rem;
+  min-width: 160px;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: background-color 0.4s ease;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a.active {
+  border-bottom: none;
+  background-color: #f0f0f0;
+  color: black;
+}
+
+
+.mode-btn {
+
+  font-weight: 600;
+  padding: 0.3rem 0.6rem;
+background-color: transparent;
+
+}
+
+
+
+
+
+
+body.bw-mode {
+  background-color: black;
+  color: white;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+body.bw-mode .dropdown-menu {
+  background-color: #222;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.15);
+}
+
+body.bw-mode .dropdown-menu a {
+  color: white;
+}
+
+body.bw-mode .dropdown-menu a:hover,
+body.bw-mode .dropdown-menu a.active {
+  background-color: #444;
+  color: white;
+}
+
+
+body.bw-mode .navbar {
+  color: white;
+}
+
+body.bw-mode .logo-icon {
+  color: white;
+}
+
+body.bw-mode .mode-btn:hover {
+  
+transition: 300ms;
+}
